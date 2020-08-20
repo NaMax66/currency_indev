@@ -57,7 +57,5 @@ export default new Vuex.Store({
       const { data } = await axios.get('https://api.kraken.com/0/public/Ticker?pair=' + getters.getPairs)
       commit('setTicker', data)
     }
-  },
-  modules: {
   }
 })
