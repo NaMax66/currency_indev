@@ -18,6 +18,9 @@ export default {
   },
   created () {
     this.setTicker()
+    setInterval(() => {
+      this.setTicker()
+    }, 15000)
   },
   methods: {
     ...mapActions(['setTicker'])
