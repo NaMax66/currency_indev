@@ -7,18 +7,18 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import {mapMutations} from 'vuex'
+import { mapActions } from 'vuex'
 
 export default {
   name: 'App',
   components: {
     HelloWorld
   },
-  created() {
+  created () {
     this.setTicker()
   },
   methods: {
-    ...mapMutations(['setTicker'])
+    ...mapActions(['setTicker'])
   }
 }
 </script>
